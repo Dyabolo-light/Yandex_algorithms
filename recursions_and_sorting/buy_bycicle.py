@@ -1,4 +1,4 @@
-def buy_bycicle(arr, x, left, right):
+def buy_bicycle(arr, x, left, right):
     if x <= arr[0]:
         return 1
     if right <= left or x > arr[-1]:
@@ -16,5 +16,5 @@ if __name__ == '__main__':
     n = int(input())
     arr = [int(i) for i in input().split()]
     price = int(input())
-    print(buy_bycicle(arr, price, left=0, right=len(arr)), end=' ')
-    print(buy_bycicle(arr, price * 2, left=0, right=len(arr)))
+    print(buy_bicycle(arr, price, left=0, right=len(arr)), end=' ')
+    print(buy_bicycle(arr, price * 2, left=0, right=len(arr)))
